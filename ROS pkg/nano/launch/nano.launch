@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <node name="rrt" pkg="nano" type="rrt.py" output="screen"/>
+
+  <node name="rrtPath" pkg="nano" type="rrtPath" output="screen"/>
+  <node name="nanoPath" pkg="nano" type="nanoPath"/>
+
+  <node name="nanoFrame" pkg="nano" type="nanoTf.py"/>
+
+  <node pkg="map_server" type="map_server" name="map_server" 
+  args="$(find nano)/yaml/map3.yaml" />
+
+  <node pkg="tf" type="static_transform_publisher" name="rrt_path_broadcaster" 
+  args="0 0 0 0 0 0 world rrtPath 100" />
+  <node pkg="tf" type="static_transform_publisher" name="nano_path_broadcaster" 
+  args="0 0 0 0 0 0 world nanoPath 100" />
+  <node pkg="tf" type="static_transform_publisher" name="map_path_broadcaster" 
+  args="0 0 0 0 0 0 world map 100" />
+
+  <node name="pathTracker" pkg="nano" type="path_controller.py"/>
+  
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find nano)/nano.rviz" 
+  required="true" />
+
+</launch>
