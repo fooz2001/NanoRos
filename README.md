@@ -15,8 +15,8 @@ this project need to install ,ros noitec, serial arduino pkg, TCP pkg for esp826
 you can run the project from launch file in nano pkg
 
 ## features
-  Feature 1: nano used rrt path planing algorithm for generating path in maps
-  Feature 2: nano used RVIZ for simulation nano path and rrt path and we can published points in map to let nano go to this points
-  Feature 3: nano used esp8266 to send feedback data to ros rof batter control and tarcking
-  Feature 4: nano used arduino uno R3 for control two stepper motor and send nano location to the esp8266
-  Feature 5: nano have a camera for live broadcasting and data collection
+ - Feature 1: nano used rrt path planing algorithm for generating path in maps
+ - Feature 2: nano used RVIZ for simulation nano path and rrt path and we can published points in map to let nano go to this points
+ - Feature 3: nano used esp8266 to send feedback data to ros rof batter control and tarcking
+ - Feature 4: nano used arduino uno R3 for control two stepper motor and send nano location to the esp8266
+ - Feature 5: nano have a camera for live broadcasting and data collection
