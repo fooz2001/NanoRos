@@ -8,13 +8,13 @@ Nano is a robot built from scratch for navigation in various complex environment
 - [Usage](#usage)
 - [Features](#features)
 
-# installation
+## installation
 this project need to install ,ros noitec, serial arduino pkg, TCP pkg for esp8266
 
-#usage
+## usage
 you can run the project from launch file in nano pkg
 
-#features
+## features
   Feature 1: nano used rrt path planing algorithm for generating path in maps
   Feature 2: nano used RVIZ for simulation nano path and rrt path and we can published points in map to let nano go to this points
   Feature 3: nano used esp8266 to send feedback data to ros rof batter control and tarcking
