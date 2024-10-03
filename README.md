@@ -8,7 +8,7 @@ Nano is a robot built from scratch for navigation in various complex environment
 - [Usage](#usage)
 - [Features](#features)
 
-installation
+# installation
 this project need to install ,ros noitec, serial arduino pkg, TCP pkg for esp8266
 
 #usage
